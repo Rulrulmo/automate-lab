@@ -2,15 +2,24 @@
 
 [실무 자동화 공방](https://automate-lab.tistory.com) 글에서 뽑은 **재사용 자동화 조각** 모음입니다.
 
-글은 how-to, 이 저장소는 복붙 가능한 모듈·예제입니다. X 배포나 블로그에서 코드 링크가 필요할 때 여기를 가리키면 됩니다.
+- **모듈** (`src/automate_lab/`): `import`해서 쓰는 코드
+- **글별 폴더** (`posts/NN-slug/`): 그 글의 예제 + README(티스토리 링크) — 블로그·X에 붙일 경로
+
+## 글 ↔ 경로
+
+| 글 | posts 경로 |
+| --- | --- |
+| [CSV 폴더 감시 /18](https://automate-lab.tistory.com/18) | [`posts/18-csv-watch`](posts/18-csv-watch/) |
+| [HTTP 재시도 /20](https://automate-lab.tistory.com/20) | [`posts/20-retry-wrapper`](posts/20-retry-wrapper/) |
+| [Structured Outputs /21](https://automate-lab.tistory.com/21) | [`posts/21-structured-outputs`](posts/21-structured-outputs/) |
 
 ## 모듈
 
-| 패키지 | 하는 일 | 블로그 |
+| 패키지 | 하는 일 | posts |
 | --- | --- | --- |
-| `automate_lab.retry` | HTTP 재시도 (지수 백오프 + 지터, 429·5xx만) | [글 /20](https://automate-lab.tistory.com/20) |
-| `automate_lab.watch` | 다운로드 폴더 CSV 감시 (크기 안정화 후 처리) | [글 /18](https://automate-lab.tistory.com/18) |
-| `automate_lab.structured` | Structured Outputs 로그 분류 | [글 /21](https://automate-lab.tistory.com/21) |
+| `automate_lab.retry` | HTTP 재시도 (지수 백오프 + 지터, 429·5xx만) | `20-retry-wrapper` |
+| `automate_lab.watch` | 다운로드 폴더 CSV 감시 | `18-csv-watch` |
+| `automate_lab.structured` | Structured Outputs 로그 분류 | `21-structured-outputs` |
 
 ## 설치
 
@@ -20,44 +29,19 @@ source .venv/bin/activate  # Windows: .venv\Scripts\activate
 pip install -e ".[watch,structured]"
 ```
 
-- 재시도만: 표준 라이브러리만 쓰므로 추가 설치 없음 (`pip install -e .`)
-- CSV 감시: `watchdog`
-- Structured Outputs: `openai`, `pydantic`
-
-## 빠른 사용
-
-```python
-from automate_lab.retry import urllib_request_with_retry
-
-status, body = urllib_request_with_retry("https://httpbin.org/status/200")
-```
-
-```bash
-# CSV 감시 예제
-python -m automate_lab.watch --watch ~/Downloads --done ~/Downloads/processed_csv
-```
-
-```bash
-# 로그 분류 예제 (OPENAI_API_KEY 필요)
-export OPENAI_API_KEY=...
-python examples/run_classify.py
-```
-
 ## 레이아웃
 
 ```
-src/automate_lab/
-  retry.py          # call_with_retry, urllib_request_with_retry
-  watch.py          # CSV 폴더 감시 CLI
-  structured.py     # LogClassification + classify_line
-examples/
-  slack_with_retry.py
-  run_classify.py
+src/automate_lab/          # 재사용 모듈
+posts/
+  18-csv-watch/
+  20-retry-wrapper/
+  21-structured-outputs/
 ```
 
-새 글에서 나온 조각은 모듈로 옮기고, README 표에 블로그 URL을 추가합니다.
+새 글: `posts/NN-slug/README.md`에 티스토리 URL을 넣고, 재사용되면 `src/`에도 올린 뒤 위 표를 갱신합니다.
 
 ## 관련
 
 - 블로그: https://automate-lab.tistory.com
-- 작성: [자동화공방](https://automate-lab.tistory.com) / GitHub [@Rulrulmo](https://github.com/Rulrulmo)
+- GitHub: [@Rulrulmo](https://github.com/Rulrulmo)
