@@ -15,7 +15,14 @@ dependencies = []
 [project.optional-dependencies]
 watch = ["watchdog>=4.0"]
 structured = ["openai>=1.40", "pydantic>=2.0"]
-all = ["automate-lab[watch,structured]"]
+receipts = [
+  "openai>=1.40",
+  "openpyxl>=3.1",
+  "pdfplumber>=0.11",
+  "Pillow>=10.0",
+  "pytesseract>=0.3",
+]
+all = ["automate-lab[watch,structured,receipts]"]
 
 [project.scripts]
 automate-lab-watch = "automate_lab.watch:main"
