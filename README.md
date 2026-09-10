@@ -16,6 +16,8 @@
 | [CSV 헤더 LLM 매핑 /23](https://automate-lab.tistory.com/23) | [`posts/23-csv-header-map`](posts/23-csv-header-map/) |
 | [윈도우 작업 스케줄러 /24](https://automate-lab.tistory.com/24) | [`posts/24-windows-task-scheduler`](posts/24-windows-task-scheduler/) |
 | [영수증 OCR+LLM /25](https://automate-lab.tistory.com/25) | [`posts/25-receipt-ocr`](posts/25-receipt-ocr/) |
+| [PDF 순서 병합 /26](https://automate-lab.tistory.com/26) | [`posts/26-pdf-merge-pypdf`](posts/26-pdf-merge-pypdf/) |
+| [git diff 커밋 초안 /27](https://automate-lab.tistory.com/27) | [`posts/27-git-diff-commit-message`](posts/27-git-diff-commit-message/) |
 
 ## 모듈
 
@@ -28,13 +30,15 @@
 | `automate_lab.header_map` | 동의어 + LLM 헤더 표준화 | `23-csv-header-map` |
 | `automate_lab.scheduled` | 스케줄 잡 UTF-8 + 파일 로그 | `24-windows-task-scheduler` |
 | `automate_lab.receipts` | 영수증 OCR→LLM→엑셀 | `25-receipt-ocr` |
+| `automate_lab.pdf_merge` | pypdf 순서 지정 병합 | `26-pdf-merge-pypdf` |
+| `automate_lab.commit_msg` | git diff → 커밋 메시지 초안 | `27-git-diff-commit-message` |
 
 ## 설치
 
 ```bash
 python -m venv .venv
 source .venv/bin/activate  # Windows: .venv\Scripts\activate
-pip install -e ".[watch,structured,receipts]"
+pip install -e ".[watch,structured,receipts,pdf]"
 ```
 
 ## 레이아웃
@@ -42,13 +46,9 @@ pip install -e ".[watch,structured,receipts]"
 ```
 src/automate_lab/
 posts/
-  18-csv-watch/
-  20-retry-wrapper/
-  21-structured-outputs/
-  22-download-sort/
-  23-csv-header-map/
-  24-windows-task-scheduler/
-  25-receipt-ocr/
+  …
+  26-pdf-merge-pypdf/
+  27-git-diff-commit-message/
 ```
 
 새 글: `posts/NN-slug/README.md`에 티스토리 URL을 넣고, 재사용되면 `src/`에도 올린 뒤 위 표를 갱신합니다.
