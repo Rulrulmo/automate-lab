@@ -18,6 +18,8 @@
 | [영수증 OCR+LLM /25](https://automate-lab.tistory.com/25) | [`posts/25-receipt-ocr`](posts/25-receipt-ocr/) |
 | [PDF 순서 병합 /26](https://automate-lab.tistory.com/26) | [`posts/26-pdf-merge-pypdf`](posts/26-pdf-merge-pypdf/) |
 | [git diff 커밋 초안 /27](https://automate-lab.tistory.com/27) | [`posts/27-git-diff-commit-message`](posts/27-git-diff-commit-message/) |
+| [watchdog CSV inbox /28](https://automate-lab.tistory.com/28) | [`posts/28-watchdog-csv-inbox`](posts/28-watchdog-csv-inbox/) |
+| [SMTP 배치 리포트 /29](https://automate-lab.tistory.com/29) | [`posts/29-smtp-script-report`](posts/29-smtp-script-report/) |
 
 ## 모듈
 
@@ -32,6 +34,8 @@
 | `automate_lab.receipts` | 영수증 OCR→LLM→엑셀 | `25-receipt-ocr` |
 | `automate_lab.pdf_merge` | pypdf 순서 지정 병합 | `26-pdf-merge-pypdf` |
 | `automate_lab.commit_msg` | git diff → 커밋 메시지 초안 | `27-git-diff-commit-message` |
+| `automate_lab.csv_inbox` | watchdog CSV inbox + quarantine | `28-watchdog-csv-inbox` |
+| `automate_lab.mail_report` | smtplib 배치 요약 메일 | `29-smtp-script-report` |
 
 ## 설치
 
@@ -40,18 +44,6 @@ python -m venv .venv
 source .venv/bin/activate  # Windows: .venv\Scripts\activate
 pip install -e ".[watch,structured,receipts,pdf]"
 ```
-
-## 레이아웃
-
-```
-src/automate_lab/
-posts/
-  …
-  26-pdf-merge-pypdf/
-  27-git-diff-commit-message/
-```
-
-새 글: `posts/NN-slug/README.md`에 티스토리 URL을 넣고, 재사용되면 `src/`에도 올린 뒤 위 표를 갱신합니다.
 
 ## 관련
 
