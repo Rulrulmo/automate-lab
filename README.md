@@ -20,29 +20,31 @@
 | [git diff 커밋 초안 /27](https://automate-lab.tistory.com/27) | [`posts/27-git-diff-commit-message`](posts/27-git-diff-commit-message/) |
 | [watchdog CSV inbox /28](https://automate-lab.tistory.com/28) | [`posts/28-watchdog-csv-inbox`](posts/28-watchdog-csv-inbox/) |
 | [SMTP 배치 리포트 /29](https://automate-lab.tistory.com/29) | [`posts/29-smtp-script-report`](posts/29-smtp-script-report/) |
+| [CSV 인코딩 판별 /30](https://automate-lab.tistory.com/30) | [`posts/30-csv-encoding-detect`](posts/30-csv-encoding-detect/) |
+| [git log 릴리스 노트 /31](https://automate-lab.tistory.com/31) | [`posts/31-git-log-release-notes`](posts/31-git-log-release-notes/) |
 
 ## 모듈
 
 | 패키지 | 하는 일 | posts |
 | --- | --- | --- |
-| `automate_lab.retry` | HTTP 재시도 (지수 백오프 + 지터, 429·5xx만) | `20-retry-wrapper` |
-| `automate_lab.watch` | 다운로드 폴더 CSV 감시 | `18-csv-watch` |
-| `automate_lab.structured` | Structured Outputs 로그 분류 | `21-structured-outputs` |
-| `automate_lab.sort_downloads` | 확장자·키워드로 Downloads 정리 | `22-download-sort` |
-| `automate_lab.header_map` | 동의어 + LLM 헤더 표준화 | `23-csv-header-map` |
-| `automate_lab.scheduled` | 스케줄 잡 UTF-8 + 파일 로그 | `24-windows-task-scheduler` |
-| `automate_lab.receipts` | 영수증 OCR→LLM→엑셀 | `25-receipt-ocr` |
-| `automate_lab.pdf_merge` | pypdf 순서 지정 병합 | `26-pdf-merge-pypdf` |
-| `automate_lab.commit_msg` | git diff → 커밋 메시지 초안 | `27-git-diff-commit-message` |
-| `automate_lab.csv_inbox` | watchdog CSV inbox + quarantine | `28-watchdog-csv-inbox` |
-| `automate_lab.mail_report` | smtplib 배치 요약 메일 | `29-smtp-script-report` |
+| `automate_lab.retry` | HTTP 재시도 | `20-retry-wrapper` |
+| `automate_lab.watch` | CSV 폴더 감시 | `18-csv-watch` |
+| `automate_lab.structured` | Structured Outputs 분류 | `21-structured-outputs` |
+| `automate_lab.sort_downloads` | Downloads 정리 | `22-download-sort` |
+| `automate_lab.header_map` | CSV 헤더 표준화 | `23-csv-header-map` |
+| `automate_lab.scheduled` | 스케줄 UTF-8·로그 | `24-windows-task-scheduler` |
+| `automate_lab.receipts` | 영수증 OCR→엑셀 | `25-receipt-ocr` |
+| `automate_lab.pdf_merge` | PDF 순서 병합 | `26-pdf-merge-pypdf` |
+| `automate_lab.commit_msg` | git diff 커밋 초안 | `27-git-diff-commit-message` |
+| `automate_lab.csv_inbox` | watchdog CSV inbox | `28-watchdog-csv-inbox` |
+| `automate_lab.mail_report` | SMTP 배치 메일 | `29-smtp-script-report` |
+| `automate_lab.csv_encoding` | CP949·UTF-8 판별 읽기 | `30-csv-encoding-detect` |
+| `automate_lab.release_notes` | git log → 릴리스 노트 | `31-git-log-release-notes` |
 
 ## 설치
 
 ```bash
-python -m venv .venv
-source .venv/bin/activate  # Windows: .venv\Scripts\activate
-pip install -e ".[watch,structured,receipts,pdf]"
+pip install -e ".[watch,structured,receipts,pdf,csv]"
 ```
 
 ## 관련

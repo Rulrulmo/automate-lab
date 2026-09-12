@@ -16,6 +16,7 @@ dependencies = []
 watch = ["watchdog>=4.0"]
 structured = ["openai>=1.40", "pydantic>=2.0"]
 pdf = ["pypdf>=4.0"]
+csv = ["pandas>=2.0"]
 receipts = [
   "openai>=1.40",
   "openpyxl>=3.1",
@@ -23,7 +24,7 @@ receipts = [
   "Pillow>=10.0",
   "pytesseract>=0.3",
 ]
-all = ["automate-lab[watch,structured,receipts,pdf]"]
+all = ["automate-lab[watch,structured,receipts,pdf,csv]"]
 
 [project.scripts]
 automate-lab-watch = "automate_lab.watch:main"
