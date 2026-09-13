@@ -3,7 +3,7 @@
 [실무 자동화 공방](https://automate-lab.tistory.com) 글에서 뽑은 **재사용 자동화 조각** 모음입니다.
 
 - **모듈** (`src/automate_lab/`): `import`해서 쓰는 코드
-- **글별 폴더** (`posts/NN-slug/`): 그 글의 예제 + README(티스토리 링크) — 블로그·X에 붙일 경로
+- **글별 폴더** (`posts/NN-slug/`): 그 글의 예제 + README(티스토리 링크)
 
 ## 글 ↔ 경로
 
@@ -22,29 +22,21 @@
 | [SMTP 배치 리포트 /29](https://automate-lab.tistory.com/29) | [`posts/29-smtp-script-report`](posts/29-smtp-script-report/) |
 | [CSV 인코딩 판별 /30](https://automate-lab.tistory.com/30) | [`posts/30-csv-encoding-detect`](posts/30-csv-encoding-detect/) |
 | [git log 릴리스 노트 /31](https://automate-lab.tistory.com/31) | [`posts/31-git-log-release-notes`](posts/31-git-log-release-notes/) |
+| [엑셀 시트→CSV /32](https://automate-lab.tistory.com/32) | [`posts/32-xlsx-sheets-to-csv`](posts/32-xlsx-sheets-to-csv/) |
+| [pytest 실패 LLM 요약 /33](https://automate-lab.tistory.com/33) | [`posts/33-pytest-failure-llm-summary`](posts/33-pytest-failure-llm-summary/) |
 
 ## 모듈
 
-| 패키지 | 하는 일 | posts |
-| --- | --- | --- |
-| `automate_lab.retry` | HTTP 재시도 | `20-retry-wrapper` |
-| `automate_lab.watch` | CSV 폴더 감시 | `18-csv-watch` |
-| `automate_lab.structured` | Structured Outputs 분류 | `21-structured-outputs` |
-| `automate_lab.sort_downloads` | Downloads 정리 | `22-download-sort` |
-| `automate_lab.header_map` | CSV 헤더 표준화 | `23-csv-header-map` |
-| `automate_lab.scheduled` | 스케줄 UTF-8·로그 | `24-windows-task-scheduler` |
-| `automate_lab.receipts` | 영수증 OCR→엑셀 | `25-receipt-ocr` |
-| `automate_lab.pdf_merge` | PDF 순서 병합 | `26-pdf-merge-pypdf` |
-| `automate_lab.commit_msg` | git diff 커밋 초안 | `27-git-diff-commit-message` |
-| `automate_lab.csv_inbox` | watchdog CSV inbox | `28-watchdog-csv-inbox` |
-| `automate_lab.mail_report` | SMTP 배치 메일 | `29-smtp-script-report` |
-| `automate_lab.csv_encoding` | CP949·UTF-8 판별 읽기 | `30-csv-encoding-detect` |
-| `automate_lab.release_notes` | git log → 릴리스 노트 | `31-git-log-release-notes` |
+| 패키지 | posts |
+| --- | --- |
+| `automate_lab.xlsx_split` | `32-xlsx-sheets-to-csv` |
+| `automate_lab.pytest_summary` | `33-pytest-failure-llm-summary` |
+| (기존 모듈 표는 README 상단 글↔경로와 동일) | |
 
 ## 설치
 
 ```bash
-pip install -e ".[watch,structured,receipts,pdf,csv]"
+pip install -e ".[watch,structured,receipts,pdf,csv,xlsx,testllm]"
 ```
 
 ## 관련
