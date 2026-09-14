@@ -24,14 +24,15 @@
 | [git log 릴리스 노트 /31](https://automate-lab.tistory.com/31) | [`posts/31-git-log-release-notes`](posts/31-git-log-release-notes/) |
 | [엑셀 시트→CSV /32](https://automate-lab.tistory.com/32) | [`posts/32-xlsx-sheets-to-csv`](posts/32-xlsx-sheets-to-csv/) |
 | [pytest 실패 LLM 요약 /33](https://automate-lab.tistory.com/33) | [`posts/33-pytest-failure-llm-summary`](posts/33-pytest-failure-llm-summary/) |
+| [pandas merge VLOOKUP /34](https://automate-lab.tistory.com/34) | [`posts/34-pandas-merge-vlookup`](posts/34-pandas-merge-vlookup/) |
+| [gh pr diff PR 본문 /35](https://automate-lab.tistory.com/35) | [`posts/35-gh-pr-diff-llm-body`](posts/35-gh-pr-diff-llm-body/) |
 
-## 모듈
+## 모듈 (최근)
 
 | 패키지 | posts |
 | --- | --- |
-| `automate_lab.xlsx_split` | `32-xlsx-sheets-to-csv` |
-| `automate_lab.pytest_summary` | `33-pytest-failure-llm-summary` |
-| (기존 모듈 표는 README 상단 글↔경로와 동일) | |
+| `automate_lab.table_merge` | `34-pandas-merge-vlookup` |
+| `automate_lab.pr_body` | `35-gh-pr-diff-llm-body` |
 
 ## 설치
 
