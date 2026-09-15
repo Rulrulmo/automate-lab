@@ -1,7 +1,8 @@
 # 파이썬으로 엑셀 파일 여러 개 합치기
 
 열 순서가 달라도 이름으로 맞추고 `_source_file`에 원본 파일명을 남깁니다.
-재사용 모듈: `automate_lab.xlsx_merge`. 블로그 URL은 발행 확인 후 연결합니다.
+재사용 모듈: `automate_lab.xlsx_merge`.
+블로그: https://automate-lab.tistory.com/36
 
 ## 실행 (저장소 루트에서)
 
