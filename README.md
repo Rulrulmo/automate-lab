@@ -31,6 +31,7 @@
 
 | 패키지 | posts |
 | --- | --- |
+| `automate_lab.xlsx_merge` | [`36-xlsx-files-merge`](posts/36-xlsx-files-merge/) (블로그 발행 준비) |
 | `automate_lab.table_merge` | `34-pandas-merge-vlookup` |
 | `automate_lab.pr_body` | `35-gh-pr-diff-llm-body` |
 
