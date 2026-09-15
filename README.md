@@ -33,6 +33,7 @@
 | 패키지 | posts |
 | --- | --- |
 | `automate_lab.xlsx_merge` | [`36-xlsx-files-merge`](posts/36-xlsx-files-merge/) |
+| `automate_lab.duplicate_files` | [`37-duplicate-files-report`](posts/37-duplicate-files-report/) |
 | `automate_lab.table_merge` | `34-pandas-merge-vlookup` |
 | `automate_lab.pr_body` | `35-gh-pr-diff-llm-body` |
 
