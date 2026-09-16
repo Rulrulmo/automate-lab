@@ -27,15 +27,18 @@
 | [pandas merge VLOOKUP /34](https://automate-lab.tistory.com/34) | [`posts/34-pandas-merge-vlookup`](posts/34-pandas-merge-vlookup/) |
 | [gh pr diff PR 본문 /35](https://automate-lab.tistory.com/35) | [`posts/35-gh-pr-diff-llm-body`](posts/35-gh-pr-diff-llm-body/) |
 | [엑셀 파일 합치기 /36](https://automate-lab.tistory.com/36) | [`posts/36-xlsx-files-merge`](posts/36-xlsx-files-merge/) |
+| [중복 파일 리포트 /37](https://automate-lab.tistory.com/37) | [`posts/37-duplicate-files-report`](posts/37-duplicate-files-report/) |
+| [CSV 행 diff /38](https://automate-lab.tistory.com/38) | [`posts/38-csv-diff-rows`](posts/38-csv-diff-rows/) |
+| [날짜별 폴더 zip /39](https://automate-lab.tistory.com/39) | [`posts/39-folder-dated-zip-backup`](posts/39-folder-dated-zip-backup/) |
 
 ## 모듈 (최근)
 
 | 패키지 | posts |
 | --- | --- |
+| `automate_lab.csv_diff` | [`38-csv-diff-rows`](posts/38-csv-diff-rows/) |
+| `automate_lab.folder_zip` | [`39-folder-dated-zip-backup`](posts/39-folder-dated-zip-backup/) |
 | `automate_lab.xlsx_merge` | [`36-xlsx-files-merge`](posts/36-xlsx-files-merge/) |
 | `automate_lab.duplicate_files` | [`37-duplicate-files-report`](posts/37-duplicate-files-report/) |
-| `automate_lab.table_merge` | `34-pandas-merge-vlookup` |
-| `automate_lab.pr_body` | `35-gh-pr-diff-llm-body` |
 
 ## 설치
 
