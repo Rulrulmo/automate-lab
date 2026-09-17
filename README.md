@@ -30,15 +30,17 @@
 | [중복 파일 리포트 /37](https://automate-lab.tistory.com/37) | [`posts/37-duplicate-files-report`](posts/37-duplicate-files-report/) |
 | [CSV 행 diff /38](https://automate-lab.tistory.com/38) | [`posts/38-csv-diff-rows`](posts/38-csv-diff-rows/) |
 | [날짜별 폴더 zip /39](https://automate-lab.tistory.com/39) | [`posts/39-folder-dated-zip-backup`](posts/39-folder-dated-zip-backup/) |
+| [CSV 중복 행 제거 /40](https://automate-lab.tistory.com/40) | [`posts/40-csv-drop-duplicates`](posts/40-csv-drop-duplicates/) |
+| [로그 ERROR→CSV /41](https://automate-lab.tistory.com/41) | [`posts/41-log-error-to-csv`](posts/41-log-error-to-csv/) |
 
 ## 모듈 (최근)
 
 | 패키지 | posts |
 | --- | --- |
+| `automate_lab.csv_dedupe` | [`40-csv-drop-duplicates`](posts/40-csv-drop-duplicates/) |
+| `automate_lab.log_errors` | [`41-log-error-to-csv`](posts/41-log-error-to-csv/) |
 | `automate_lab.csv_diff` | [`38-csv-diff-rows`](posts/38-csv-diff-rows/) |
 | `automate_lab.folder_zip` | [`39-folder-dated-zip-backup`](posts/39-folder-dated-zip-backup/) |
-| `automate_lab.xlsx_merge` | [`36-xlsx-files-merge`](posts/36-xlsx-files-merge/) |
-| `automate_lab.duplicate_files` | [`37-duplicate-files-report`](posts/37-duplicate-files-report/) |
 
 ## 설치
 
