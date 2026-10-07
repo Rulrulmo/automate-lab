@@ -2,6 +2,8 @@
 
 [실무 자동화 공방](https://automate-lab.tistory.com) 글에서 뽑은 **재사용 자동화 조각** 모음입니다.
 
+AI로 작성된 프로젝트입니다.
+
 - **모듈** (`src/automate_lab/`): `import`해서 쓰는 코드
 - **글별 폴더** (`posts/NN-slug/`): 그 글의 예제 + README(티스토리 링크)
 
